@@ -1,29 +1,19 @@
 docker-oracle-xe-11g
 ============================
 
-Oracle Express Edition 11g Release 2 on Ubuntu 14.04.4 LTS
+Oracle Express Edition 11g Release 2 on Ubuntu 16.04 LTS
 
-This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/wnameless/oracle-xe-11g/) of [Docker Registry](https://registry.hub.docker.com/).
+This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/fengzhou/oracle-xe-11g/) of [Docker Registry](https://registry.hub.docker.com/).
 
-### Installation
+### Installation(with Ubuntu 16.04)
 ```
-docker pull wnameless/oracle-xe-11g
-```
-
-Run this, if you want to use the Ubuntu 16.04 LTS
-```
-docker pull wnameless/oracle-xe-11g:16.04
+docker pull fengzhou/oracle-xe-11g
 ```
 
-### Quick Start
+>>>>>>> Upgrade Ubuntu
 Run with 22 and 1521 ports opened:
 ```
-docker run -d -p 49160:22 -p 49161:1521 wnameless/oracle-xe-11g
-```
-
-Run this, if you want the database to be connected remotely:
-```
-docker run -d -p 49160:22 -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
+docker run -d -p 49160:22 -p 49161:1521 fengzhou/oracle-xe-11g
 ```
 
 Connect database with following setting:
