@@ -43,5 +43,10 @@ chmod +x /usr/sbin/startup.sh &&
 # Remove installation files
 rm -r /assets/
 
+# Clean up 
+rm -rf /tmp/* /var/tmp/*
+
+apt-get clean
+rm -rf /var/lib/apt/lists/*
 
 exit $?

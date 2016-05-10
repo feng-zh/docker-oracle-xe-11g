@@ -10,7 +10,6 @@ This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/fengz
 docker pull fengzhou/oracle-xe-11g
 ```
 
->>>>>>> Upgrade Ubuntu
 Run with 22 and 1521 ports opened:
 ```
 docker run -d -p 49160:22 -p 49161:1521 fengzhou/oracle-xe-11g
