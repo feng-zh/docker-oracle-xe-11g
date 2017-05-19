@@ -15,5 +15,6 @@ if [ ! -f "/tmp/.started" ]; then
   sqlplus -s SYSTEM/oracle << EOF
     alter system disable restricted session;
     alter profile default limit password_life_time unlimited;
+    alter user system identified by oracle;
 EOF
 fi
